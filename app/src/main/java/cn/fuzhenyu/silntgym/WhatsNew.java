@@ -21,14 +21,6 @@ import java.util.ArrayList;
 
 public class WhatsNew extends Activity {
 
-/*    private static  int IsNew = 0;
-    public static int getIsNew() {
-        return IsNew;
-    }
-    public static void setIsNew(int isNew) {
-        IsNew = isNew;
-    }*/
-
     /** Viewpager对象 */
     private ViewPager viewPager;
     private ImageView imageView;
