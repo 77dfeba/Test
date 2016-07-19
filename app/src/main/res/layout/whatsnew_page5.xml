@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/toMain"
-        android:text="click to in"
+        android:text="@string/tomain"
         android:background="@drawable/whatsnew_start_btn_normal"
         android:layout_width="180dp"
         android:layout_height="wrap_content"

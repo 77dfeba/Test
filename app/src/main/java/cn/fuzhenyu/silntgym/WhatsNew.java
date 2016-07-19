@@ -2,6 +2,7 @@ package cn.fuzhenyu.silntgym;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -19,6 +20,15 @@ import java.util.ArrayList;
  */
 
 public class WhatsNew extends Activity {
+
+/*    private static  int IsNew = 0;
+    public static int getIsNew() {
+        return IsNew;
+    }
+    public static void setIsNew(int isNew) {
+        IsNew = isNew;
+    }*/
+
     /** Viewpager对象 */
     private ViewPager viewPager;
     private ImageView imageView;
