@@ -1,10 +1,12 @@
-package cn.fuzhenyu.silntgym;
+package cn.fuzhenyu.silntgym.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+
+import cn.fuzhenyu.silntgym.R;
 
 /**
  * Created by 77dfeba on 2016/6/7.

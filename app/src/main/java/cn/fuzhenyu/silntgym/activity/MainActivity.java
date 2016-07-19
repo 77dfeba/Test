@@ -1,7 +1,9 @@
-package cn.fuzhenyu.silntgym;
+package cn.fuzhenyu.silntgym.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import cn.fuzhenyu.silntgym.R;
 
 public class MainActivity extends Activity {
 

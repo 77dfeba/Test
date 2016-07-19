@@ -1,8 +1,7 @@
-package cn.fuzhenyu.silntgym;
+package cn.fuzhenyu.silntgym.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -14,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
+
+import cn.fuzhenyu.silntgym.R;
 
 /**
  * Created by 77dfeba on 2016/6/24.
