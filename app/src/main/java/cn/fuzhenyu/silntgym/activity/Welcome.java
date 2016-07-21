@@ -10,6 +10,7 @@ import cn.fuzhenyu.silntgym.R;
 
 /**
  * Created by 77dfeba on 2016/6/7.
+ * 欢迎界面
  */
 
 public class Welcome extends Activity {
@@ -37,6 +38,6 @@ public class Welcome extends Activity {
                 }
                 Welcome.this.finish();
             }
-        },2000);
+        },2500);
     }
 }

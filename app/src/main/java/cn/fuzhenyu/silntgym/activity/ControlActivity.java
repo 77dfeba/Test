@@ -29,6 +29,9 @@ import org.fourthline.cling.android.AndroidUpnpService;
 import java.util.ArrayList;
 import java.util.Timer;
 
+/**
+ * 控制播放界面的前进后退，进度条
+ */
 public class ControlActivity extends Activity implements OnClickListener {
 
 	public static boolean isplay = false;
@@ -122,8 +125,19 @@ public class ControlActivity extends Activity implements OnClickListener {
 		localIntentFilter.addAction(Action.PLAY_ERR_AUDIO);
 		registerReceiver(this.updatePlayTime, localIntentFilter);
 
-	}
 
+	}
+	//返回主菜单
+	@Override
+	public boolean onKeyDown(int keyCode,KeyEvent event){
+		if(keyCode == KeyEvent.KEYCODE_BACK){
+			Intent intent = new Intent();
+			intent.setClass(ControlActivity.this,MainActivity.class);
+			startActivity(intent);
+			finish();
+		}
+			return super.onKeyDown(keyCode, event);
+	}
 	@Override
 	protected void onResume() {
 		DMCControl.isExit = false;
@@ -233,14 +247,6 @@ public class ControlActivity extends Activity implements OnClickListener {
 		}
 	}
 
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			return true;
-		}
-		return super.onKeyDown(keyCode, event);
-	}
-
 	private void playPause() {
 		if (null != dmcControl) {
 			if (isplay) {
@@ -316,5 +322,4 @@ public class ControlActivity extends Activity implements OnClickListener {
 	// }
 	// }, 100, 500);
 	// }
-
 }

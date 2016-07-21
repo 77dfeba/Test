@@ -18,6 +18,7 @@ import cn.fuzhenyu.silntgym.R;
 
 /**
  * Created by 77dfeba on 2016/6/24.
+ * 导航界面
  */
 
 public class WhatsNew extends Activity {

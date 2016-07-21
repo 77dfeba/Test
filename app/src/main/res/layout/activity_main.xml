@@ -1,17 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#7CFC00"
     tools:context="cn.fuzhenyu.silntgym.activity.MainActivity">
 
     <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="30dp"
+        android:textColor="#CD6600"
+        android:textStyle="bold|italic"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:background="#7EC0EE"
+        android:text="欢迎进入无声广场的世界" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_row="1"
+        android:layout_column="0">
+
+        <Button
+            android:text="当前歌曲"
+            android:textSize="40dp"
+            android:id="@+id/button1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:text="教学视频"
+            android:textSize="40dp"
+            android:id="@+id/button2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:text="队伍通知"
+            android:textSize="40dp"
+            android:id="@+id/button3"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_row="2"
+        android:layout_column="0">
+
+        <Button
+            android:text="语音支持"
+            android:textSize="40dp"
+            android:id="@+id/button4"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:text="缓存歌曲"
+            android:textSize="40dp"
+            android:id="@+id/button5"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:text="聊天空间"
+            android:textSize="40dp"
+            android:id="@+id/button6"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_row="3"
+        android:layout_column="0">
+
+        <Button
+            android:text="生成曲单"
+            android:textSize="40dp"
+            android:id="@+id/button7"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:text="解析曲单"
+            android:textSize="40dp"
+            android:id="@+id/button8"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:text="设置"
+            android:textSize="40dp"
+            android:id="@+id/button9"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</GridLayout>

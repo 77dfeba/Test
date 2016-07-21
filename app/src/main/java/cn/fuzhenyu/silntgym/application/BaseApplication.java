@@ -31,7 +31,7 @@ public class BaseApplication extends Application {
 
 	public ArrayList<ContentItem> listPhoto;
 
-	public ArrayList<ContentItem> listPlayMusic = new ArrayList();
+	public ArrayList<ContentItem> listPlayMusic = new ArrayList<>();
 
 	public ArrayList<ContentItem> listVideo;
 
